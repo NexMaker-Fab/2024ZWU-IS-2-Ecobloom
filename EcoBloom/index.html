@@ -5,40 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecobloom</title>
     <style>
-        -ysa{
-            width: 300px;
-            background-color: antiquewhite;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-           }
-       </style>
+    header a{
+        color:rgb(104, 88, 30);
+        text-decoration: none;
+    } 
+    *{
+    padding: 0px;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    }
+    .btli{
+        float:right;
+        width:186px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .navlist a{
+        display: block;
+        line-height: 32px;
+        border:20px px;
+    }
+    .navlist a:hover{
+        background: #e7e2c9;
+    }
+    .droplist{
+        background: rgba(250, 237, 192,0.7);
+        box-shadow: 0 0.5px 1px #5d5b51;
+        display: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .btli:hover .droplist{
+            display:block;
+    }
+    .droplist li{
+        border-top: 1px solid #5d5b51;
+    }
+    </style>
     <link rel="stylesheet" href="style1.css">
+
     </head>
 <body>
     <header>
-<section class="food1">
-    <h1>food bank</h1>
-</section>
-    <nav>
-    <ul>
-        <li><a href="#">首页</a></li>
-        <li><a href="主页.html">关于我们</a></li>
-        <li><a href="Untitled-1.html">课程实践</a></li>
-        <li><a href="#">期末项目</a></li>
-    </ul>
-    </nav>
+        <ul>
+            <li><a href="#" >Final project</a>
+                <ul class="dropdown">
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                </ul>
+            </li>
+            <li><a href="Untitled-1.html">Course practice</a>
+                <ul class="dropdown">
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                </ul>
+            </li>
+            <li><a href="About us.html">About us</a>
+                <ul class="dropdown">
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home page</a>
+                <ul class="dropdown">
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                    <li><a href="#">drop</a></li>
+                </ul>
+            </li>
+        </ul>
     </header>
     <main>
 <section class="food2">
     <div class="info">
-<p1>web development|technological innovation</p1>
+<p1>Web development|technological innovation</p1>
 <h2>EcoBloom</h2>
 <p2>A team dedicated to combining the beauty of art with technological innovation</p2>
-    <br><li><a href="#">PROJECT</a></li>
-      <li><a href="#">FINAL WORK</a></li> <br>
+    <br><li><a href="#">Project</a></li>
+      <li><a href="#">Final work</a></li> <br>
 </div>
-<img src="images1/fdd661fdf2c524f1d5efc724cc2dcb836bbadf0c7b084-tpiSGO_fw1200webp.webp" alt="food bank">
+<img src="images1/fdd661fdf2c524f1d5efc724cc2dcb836bbadf0c7b084-tpiSGO_fw1200webp.webp">
 </section>
     </main>
     <section class="introduce">

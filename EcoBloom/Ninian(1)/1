@@ -5,48 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header>
     <title>网页制作步骤简介</title>
-  
-  
-           
-<style>
-    
-
-
-
-    
+    <link rel="stylesheet" href="About us.css">
+    <h3><a href="index.html">Return</a></h3>
+          
+    <style>
+    h3{
+        font-size: 25px;
+        color:rgb(123, 97, 2);
+        text-decoration: none;
+        left: 30px;
+        border:2px solid #44b244;
+        padding:15px 15px;
+        width:50%;
+        border-radius: 16px;
+        line-height:4em;
+        display:inline;
+        right:5vw;
+        line-height:6px;
+    }
+ 
     div{
       
         background-image: url("images/背景图片.jpg");
         background-repeat: no-repeat;
         background-size: 90% 90%;
-
-
-
-
     }
      h1{
         color: rgb(0, 0, 0);
         font-size: 35px;
-        padding:2px 575px;
-       }
-       
-      
-
-
-
-
-       
+        padding:2px 600px;
+        width:50%;
+       }    
   img{
-width: 90%;
-height: 90%;
-padding: 10px 73px;
-
-
+    width: 90%;
+    height: 90%;
+    padding: 10px 73px;
+    }
+    main {
+    background-color: rgb(250, 250, 243);
+    background-image: url("images1/微信图片_20240510112739.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border:1px rgb(153, 150, 126);
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-     
     </style>
 
-    </head>
+</head>
 
     <h1>网页制作过程简介</h1> 
     
@@ -63,17 +72,11 @@ padding: 10px 73px;
    
     
 </header>
+<body bgcolor= #fbedbe>
 
 </body>
+</body>
 </html>
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>制作过程</title>
-    <body becolor="orange"></body>
-    <link rel="stylesheet" href="style.css">
 </head>
 </html>
 <!DOCTYPE html>
@@ -82,11 +85,9 @@ padding: 10px 73px;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>制作过程</title>
-    <button type="submit">返回</button>
+    
 </heady>
-    <body bgcolor="NavajoWhite">
-
-    </body>
+  
  
 </html>
 
