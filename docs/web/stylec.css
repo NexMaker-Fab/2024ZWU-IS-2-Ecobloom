@@ -4,14 +4,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: #5e5e5e;
+    color: #fedf10;
     font-family: sans-serif;
 }
 .main { 
     height: 100vh;
     width: 100%;
     position: relative;
-    background: #efe3af;
+    background: #666428;
     padding: 0 8%;
 }
 nav{
@@ -31,25 +31,25 @@ nav ul li{
     cursor: pointer;
 }
 .logo .logo-1{
-    color: #274f90;
+    color: #ffa200;
     font-size: 50px;
 }
 .logo .logo-2{
-    color: #274f90;
+    color: #ffa200;
     font-size: 50px;
 }
 nav ul:hover{
-    color: #274f90;
+    color: #ffa200;
 }
 .text-box{
     margin-top: 10%;
     line-height: 26px;
     letter-spacing: 1;
-    color: #274f90;
+    color: #ffa200;
 }
 .text-box h1{
     font-size: 75px;
-    color: #274f90;
+    color: #ffa200;
     line-height: 150px;
 }
 .text-box p{
@@ -59,9 +59,9 @@ nav ul:hover{
 }
 .text-box h3 {
     font-size: 25px;
-        color:#274f90;
+        color:#ffa200;
         text-decoration: none;
-        border:2px solid #274f90;
+        border:2px solid #ffa200;
         padding:15px 15px;
         border-radius: 16px;
         line-height:4em;
