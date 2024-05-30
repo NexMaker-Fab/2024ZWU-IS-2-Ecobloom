@@ -29,7 +29,7 @@ main {
 }
 .main { 
     height: 100vh;
-    position: relative;
+    position:fixed;
 }
 .text-box {
     margin-top: 50px;
@@ -50,27 +50,49 @@ main {
     justify-content:space-evenly;
     align-items:center;
     margin:20px 0;
-    padding: 100px 0px 80px;
+    padding: 10px 0px 80px;
 }
 .introduce1 div {
-    width:300px;
+    width:160px;
     text-align:center;
 }
-.introduce1 h2 {
+.introduce1 h2  {
     font-size: 40px;
     color:rgb(95, 76, 38);
     text-align: center;
     width: 570px;
-    margin-right: 40px;
-    margin:15px 180px;
-    height: 100px;
-    line-height:20px;
+    margin-right: 30px;
+    margin:5px 520px;
+    height:50px;
+    line-height:1px;
 }
-.introduce1 img {
+.introduce1 h3  {
+    font-size: 30px;
+    color:rgb(95, 76, 38);
+    text-align: center;
+    width: 1300px;
+    margin-right: 30px;
+    margin:0px 120px;
+    height: 100px;
+    line-height:60px;
+    margin-bottom: 300px;
+}
+.introduce2 {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 500px;
+    padding:40px 0 80px 0;
+}
+.introduce2 div {
+    width:250px;
+    text-align:center;
+}
+.introduce2 img {
 width:96%;
 border-radius:50px;
 }
-.introduce1 a {
+.introduce2 a {
 font-size:20px;
 margin:20px 0;
 color:rgb(95, 76, 38);
