@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Typed Website</title>
+    <link rel="stylesheet" href="processing.css">
+    <h6><a href="index.html">Return</a></h6>
+</head>
+
+<body>
+    <h1>Processing</h1>
+    <h2>Processing基础知识</h2>
+    <div class="image">
+        <img src="processing.png">
+    </div>
+    <p>Processing是一种基于Java语言的开源编程语言和集成开发环境(IDE)。它主要用于视觉艺术、计算艺术和计算机图形学的开发。 
+        Processing易于学习和理解，并有着强大的2D和3D图形渲染功能，快速生成交互式可视化效果。
+        在Processing基础知识介绍中，我们将介绍Processing的基本概念、语法和一些简单的项目示例。
+    </p>
+    <h3>1.以下是Processing的基本概念：</h3>
+    <ul>
+        <li>
+            <p><strong>-Sketch:</strong>Processing中的程序被称为“Sketch”，它由setup()、draw()和其他函数组成。
+            </p>
+        </li>
+
+        <li>
+            <p><strong>- setup()函数:</strong>用于初始化程序，只在程序开始时运行一次。</p>
+        </li>
+
+        <li>
+            <p><strong>- draw()函数:</strong>用于循环执行特定的代码块，用于绘制图形和实现交互等。</p>
+        </li>
+
+        <li>
+            <p><strong>-Coordinates:</strong>Processing使用以左上角为原点的坐标系，x轴正方向向右，y轴正方向向下。</p>
+        </li>
+    </ul>
+    <h3>2.Processing的语法：</h3>
+    <ul>
+        <li>
+            <p><strong>变量和常量:</strong>可以用于存储和操作数据。
+            </p>
+        </li>
+
+        <li>
+            <p><strong>-数据类型:</strong>包括整数型(int)、浮点型(float)、字符型(char)和布尔型(boolean) 等。</p>
+        </li>
+
+        <li>
+            <p><strong>-运算符:</strong> 用于数学和逻辑运算，如加法(+)、减法(-)和等于(==) 等。</p>
+        </li>
+
+        <li>
+            <p><strong>-控制流程:</strong>使用条件语句(if-else)和循环语句(for、while)等来控制程序的流程和执行。</p>
+        </li>
+    </ul>
+    <h3>3.示例项目：</h3>
+    <ul>
+        <li>
+            <p><strong>-绘制几何图形:</strong>使用Processing的绘图函数和基本形状函数来绘制简单的几何图形，如矩形、圆形和线条等。
+            </p>
+        </li>
+
+        <li>
+            <p><strong>-交互式动画:</strong>使用鼠标和键盘事件的处理来实现简单的交互效果，如拖动、点击和键盘控制等。</p>
+        </li>
+
+        <li>
+            <p><strong>-数据可视化:</strong> 使用Processing的图形渲染和数据处理功能来创建漂亮的数据可视化效果，如柱状图和散点图等。</p>
+        </li>
+
+        <li>
+            <p><strong>-基本游戏:</strong>使用Processing的2D图形和输入处理功能来创建简单的游戏，如跳跃游戏和射击游戏等。</p>
+        </li>
+    </ul>
+    <h2>Processing基本工具延深</h2>
+    <h3>(1)介绍</h3>
+    <p>processing界面简洁，上手容易，这让我们可以专注于使用代码创作。但创作过程中，你总会遇上一些不愉快的体验:比如想要使用某种颜色，却不知道它的代码;或者加个线条，需要精确计算位置。
+        因此我要来介绍一下processing中你可能没有注意到的工具，包括软件本身的以及第三方提供的。 因此我要来介绍一下processing中你可能没有注意到的工具，包括软件本身的以及第三方提供的。
+         通过这些工具，可以大大增加你的创作效率，并且可以在菜单栏的工具选项中添加工具中找到第三方工具列表。</p>
+    <div class="image">
+         <img src="pr1.jpg">
+         <img src="pr2.jpg">
+    </div>
+    <p>下载的工具都可在工具列表中找到</p>
+    <h3>(2)工具介绍</h3>
+    <ul>
+        <li>
+            <p><strong>1.颜色选择器:</strong>颜色选择器可以让你快速创建一个颜色，而不用通过给各个颜色通道添加数值的方式添加颜色，这让你在选择颜色的时候可以清楚地看到选中的是哪一种颜色。
+            </p>
+            <div class="image">
+                <img src="pr3.jpg">
+            </div>
+        </li>
+
+        <li>
+            <p><strong>2.References Tool：</strong>这是一个方便使用者查询processing中各类基本元素的工具，相当于将官网中references的重要信息收集在了这里，你可以快速查询你需要的各类reference.</p>
+        </li>
+        <div class="image">
+            <img src="pr4.webp">
+        </div>
+
+        <li>
+            <p><strong>3.Shape-Skech:</strong>它提供给使用者一个画图板，提供了基本的几何图形，可进行颜色选择，笔画调节，画布大小调节。更方便的是，当你完成了图形，只需要点击转移代码按钮，就可以将图形自动转化为代码，processing会把你画的图形自动整合成一个方法供你调用。
+            </p>
+        </li>
+        <div class="image">
+            <img src="pr5.jpg">
+        </div>
+
+        <li>
+            <p><strong>4.showuseage:</strong>这个功能可以在选择一段代码后右键找到，在useage列表里，会列出使用到你选中的代码的那一行的代码，单击可以跳转到那一行，这样想知道这段代码在哪里有使用到就很方便了。
+            </p>
+        </li>
+        <div class="image">
+            <img src="pr6.jpg">
+        </div>
+
+        <li>
+            <p><strong>5.量名称更改：</strong>当你想要改变某个在程序中已经出现过很多次的变量的时候，你可以用两种方式快速地改变。一种是调出查找，编辑》查找（ctrl+f），填入你需要替换的变量名即可。            </p>
+        </li>
+        <div class="image">
+            <img src="pr7.webp">
+        </div>
+
+        <li>
+            <p><strong>6.Font Highlighting Editor:</strong>如果你看厌倦了processing的变量颜色，你可以在工具列表中下载一个FontHighlighting Editor 来自定义变量的颜色。            </p>
+        </li>
+        <div class="image">
+            <img src="pr8.webp">
+        </div>
+        <div class="image">
+            <img src="pr9.webp">
+        </div>
+    </ul>
+    <h2>Processing基本工具延深：Arduino控制Processing</h2>
+        <h3>实现用 Processing 播放音乐并使用 Arduino 控制板制作一个能上下移动的机械:</h3>
+        <ul>
+            <li>
+                <p><strong>设置 Processing 部分：</strong>使用 Processing 来播放音乐。你可以使用 Minim 库来加载和播放音频文件。首先，确保你已经安装了 Minim 库。
+                    编写一个程序，使用 Minim 库加载音频文件，并在程序中添加控制按钮来控制音乐的播放、暂停等功能。
+                </p>
+            </li>
+    
+            <li>
+                <p><strong>设置 Arduino 部分：</strong>连接你的 Arduino 控制板，并使用 Arduino IDE 编写一个程序，用于接收来自 Processing 的控制指令，并控制机械的上下运动。
+
+                    在 Arduino 代码中，你可以通过串口通信来接收来自 Processing 的指令。根据指令，控制板可以驱动相关的电机或执行其他动作，以使机械上下运动。
+                    </p>
+            </li>
+    
+            <li>
+                <p><strong>建立通信：</strong> 在 Processing 中，你需要使用 Serial 库来与 Arduino 控制板进行串口通信。你可以发送简单的指令（例如字符或数字），告诉 Arduino 控制板何时启动、停止或改变机械的运动状态。</p>
+            </li>
+    
+            <li>
+                <p><strong>整合和调试：</strong>将 Processing 中的音乐播放和 Arduino 控制板的指令发送整合到一个程序中。
+
+                    测试整个系统，确保音乐可以正常播放，并且 Arduino 控制板可以正确地接收和执行来自 Processing 的指令。</p>
+            </li>
+        <h2>在 Processing 中，播放音乐并通过串口发送指令到 Arduino：</h2>
+        <pre><code>
+            import processing.serial.*;
+
+            Serial arduino;
+            boolean isPlaying = false;
+            
+            void setup() {
+              size(200, 200);
+              arduino = new Serial(this, Serial.list()[0], 9600); // 根据你的串口号修改
+            }
+            
+            void draw() {
+              background(255);
+              if (isPlaying) {
+                // 播放音乐
+              }
+            }
+            
+            void keyPressed() {
+              if (key == 'p') { // 'p' 键控制播放/暂停音乐
+                isPlaying = !isPlaying;
+                if (isPlaying) {
+                  arduino.write('1'); // 发送指令给 Arduino 控制板
+                } else {
+                  arduino.write('0');
+                }
+              }
+            }陈佳怡@18:53在 Arduino 中，接收来自 Processing 的指令并控制机械运动：陈佳怡@18:53char command;
+            
+            void setup() {
+              Serial.begin(9600);
+              pinMode(2, OUTPUT); // 控制机械上升的引脚
+              pinMode(3, OUTPUT); // 控制机械下降的引脚
+            }
+            
+            void loop() {
+              if (Serial.available() > 0) {
+                command = Serial.read();
+                if (command == '1') {
+                  digitalWrite(2, HIGH); // 上升
+                  digitalWrite(3, LOW);
+                } else if (command == '0') {
+                  digitalWrite(2, LOW); // 下降
+                  digitalWrite(3, HIGH);
+                }
+              }
+            }
+    </code></pre>
+        </ul>
+        <div class="image">
+             <img src="截.png">
+        </div></p>
+    <h3>Processing鼠标键盘互动</h3>
+    <h3>Processing代码</h3>
+    .<pre><code>
+          int x, y; // 小球的位置
+int diameter = 50; // 小球的直径
+int originalY; // 初始y坐标
+int speedX = 5; // 小球的水平速度
+
+void setup() {
+  size(1200, 800); //显示框大小
+  x = width/2;
+  y = height/2;
+  originalY = y;
+}
+
+void draw() {
+  background(255);
+  
+  // 绘制小球
+  fill(0);
+  ellipse(x, y, diameter, diameter);
+  
+  // 更新小球的位置
+  x += speedX;
+  
+  // 边界检测
+  if (x > width - diameter/2 || x < diameter/2) {
+    speedX *= -1; // 当小球触到边界时反转水平速度方向
+  }
+}
+
+void keyP
+ressed() {
+  if (key == 'a' || key == 'A') {
+    speedX = -5; // 按下 'a' 键，小球向左移动
+  } else if (key == 'd' || key == 'D') {
+    speedX = 5; // 按下 'd' 键，小球向右移动
+  }
+}
+
+void keyReleased() {
+  speedX = 0; // 松开键盘时停止小球的水平移动
+}
+
+void mousePressed() {
+  if (y == originalY) {
+    y -= 50; // 鼠标点击时小球向上移动一段距离
+  }
+}
+
+void mouseReleased() {
+  y = originalY; // 鼠标松开时小球返回原始位置
+}
+</code></pre>
+<h3>效果展示</h3>
+<div class="image">
+    <img src="1.png">
+    <img src="2.png">
+    <img src="3.png">
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

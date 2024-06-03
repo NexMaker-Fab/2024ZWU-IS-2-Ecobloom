@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Typed Website</title>
+    <link rel="stylesheet" href="processing.css">
+    <h6><a href="index.html">Return</a></h6>
+
+</head>
+<style>
+body {
+    background-color: rgb(245, 229, 170);
+    color: rgb(0, 0, 0);
+  }
+
+  h1 {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: left;
+  }
+  pre{
+    background-color:#d8d2d2
+    padding：60px;
+    }
+    code{
+    font-size: 16px;
+    color: rgb(177, 177, 174);
+    }
+    .text-box {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.text-box h3 {
+    font-size: 25px;
+    color:rgb(123, 97, 2);
+    text-decoration: none;
+    border:2px solid #44b244;
+    padding:15px 15px;
+    border-radius: 16px;
+    line-height:4em;
+    display:inline;
+}
+</style>
+</head>
+
+<body>
+    <h1>Arduino Input</h1>
+    <h2>硬件的运用</h2>
+    <div class="image">
+        <img src="jq.jpg">
+    </div>
+    <p>
+        甲醛传感器:甲醛传感器的工作原理基于化学传感技术,它利用化学反应来检测空气中的甲醛浓度。
+        传感器内部包含一种特殊的化学材料,当这种材料接触到空气中的甲醛时,会发生化学反应。
+        这种化学反应会产生一个可以测量的电信号,传感器通过测量这个电信号的大小来确定空气中的甲醛浓度。
+    </p>
+    <div class="image">
+        <img src="huatan.JPG">
+    </div>
+    <p>二氧化碳传感器:二氧化碳传感器的工作原理主要基于化学反应或物理效应来检测和测量环境中的二氧化碳浓度。
+    </p>
+    <div class="image">
+        <img src="shidu.png">
+    </div>
+    <p>
+        温湿度传感器：温湿度传感器，又称为温湿度计，是一种测量环境中温度和湿度的设备。
+        它可以将温度和湿度的变化转换为电信号，并通过接收这些信号来监测环境的状态。
+    </p> 
+    <div class="image">
+        <img src="ar.png">
+    </div>
+    <p>
+        Arduino UNO R3传感器扩展板：此扩展板可与UNO的R3开发板配合使用，可以直接插在UNO的R3开发板上，在保留原10口的情况下，再引出各个10口每个10口又都配备了独立的VCC和GND
+        接口，使得传感器接电源变得容易，即使使用的传感器较多，接线也变得很轻松，开发难度大大降低。
+    </p>
+    <div class="image">
+        <img src="kf.png">
+    </div>
+    <p>
+        Arduino MEGA2560开发板：Arduino Mega2560适合需要大量IO接口的设计，
+        板子通过简单配置可以控制多种设备，
+        并提供了丰富的接口如IIC/UART/SPI等，方便我们连接和扩展传感器或其他设备。
+    </p> 
+    <div class="image">
+        <img src="xianshi.png">
+    </div>
+    <p>
+        arduino uno lcd显示屏：帮助我们显示图像或文本。
+    </p> 
+    <div class="image">
+        <img src="r3.png">
+    </div>
+    <p>
+        arduino uno r3 开发板：帮助我们通过编程控制外部设备。
+    </p> 
+        <h2>Arduino input实例</h3>
+            <h3>基于Final work,我们选择制作了温湿度传感器显示装置，通过与温湿度传感器与Arduino Uno连接实现。</h3>
+            <h3>以下是具体连接方法</h3>
+            <div class="image">
+                <img src="UNO.jpg">
+            </div>
+                <pre><code>
+                    Processing代码部分
+                    import processing.serial.*;//引入serial库
+            PFont font;
+            Serial myPort;
+            float h;
+            float t;
+            void setup(){
+               background(255);
+               size(600,400);
+               myPort = new Serial(this,"COM5",9600);
+               myPort.bufferUntil('\n');
+               font = createFont("C:\\Users\\NIU NIU\\Desktop\\data\\FuturaBT-BoldCondensed-48.vlw",50);
+               textFont(font,50);
+               fill(255,0,0);
+               text("湿度:",50,50);
+               text("温度:",50,150);
+            }
+            void draw(){
+              background(255);
+              fill(255,0,0);
+              text("湿度:",50,50);
+               text("温度:",50,150);
+              text(h,200,50);
+              text(t,200,150);
+              rect(0,250,h,20);
+            }
+            void serialEvent(Serial p) {
+              String inString= p.readString();
+              print(inString);
+              String[]list=split(inString,',');
+              h=float(list[0]);
+              t=float(list[1]);
+              println(h);
+              println(t);
+            }
+            </code></pre>
+                .<pre><code>
+                    Arduino代码部分
+            #include "DHT.h"
+            #define DHTPIN 10
+            #define DHTTYPE DHT11
+            DHT dht(DHTPIN, DHTTYPE);
+            void setup() {
+            // put your setup code here, to run once:
+            Serial.begin(9600);
+            dht.begin();//启用传感器
+            }
+            
+            void loop(){
+            delay(2000);
+            // put your main code here, to run repeatedly:
+            float h = dht.readHumidity();
+            float t = dht.readTemperature();
+            Serial.print(h);
+            Serial.print(',');
+            Serial.print(t);
+            Serial.print('\n');
+            }
+            </code></pre>
+            <h3>完成界面展示</h3>
+            <div class="image">
+                <img src="显示.png">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </body>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
