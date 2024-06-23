@@ -80,7 +80,7 @@ body{font-size: 25px;}
     .info p1 {
         animation-name: hc;
         animation-duration:0.5s;
-        animation:-fill-mode: both;
+        animation:-fill-mode:both;
     }
     .info h2 {
         animation-name: hc;
